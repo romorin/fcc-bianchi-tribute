@@ -1,0 +1,87 @@
+<!-- 	freeCodeCamp tribute challenge 
+	uses bootstap -->
+
+<!-- css-->
+<style>
+	.tri-text {
+		color: black;
+	}
+	.tri-subtitle {
+		font-style: italic;
+	}
+	.tri-quote {
+		font-weight: bold;
+	}
+	.tri-list-header {
+		font-weight: bold;
+	}
+	.tri-line-break {
+		color: #ECECEC;
+	}
+	#base {
+		padding: 5% 10% 5% 10%;
+	}
+	#contents {
+		background-color: #ECECEC;
+		border-radius: 5px;
+		padding: 5%;
+	}
+	#details {
+		margin: 0px 20% 0px 20%;
+	}
+	#picture-container {
+		background-color: white;
+		border-color: lightgrey;
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 5px;
+		padding: 5px;
+	}
+	#quote-container {
+		margin: 0px 0px 0px 5%;
+	}
+</style>
+
+<!-- html -->
+<div id="base" class="container-fluid">
+	<!-- Contents section  -->
+	<div id="contents">
+		<!-- Title  -->
+		<h1 class="tri-text text-center">#Title</h1>
+		
+		<!-- Subtitle -->
+		<h3 class="tri-text text-center tri-subtitle">#Subtitle</h3>
+		
+		<!-- Picture section -->
+		<div id="picture-container">
+			<!-- picture -->
+			<!-- <img/> -->
+			<!-- context with credits -->
+			<p class="tri-text text-center">#context with credits</p>
+		</div>
+		
+		<!-- details -->
+		<div id="details">
+			<!-- timeline -->
+			<h3 class="tri-text">#List title</h3>
+			<ul class="tri-text">
+				<li><span class="tri-list-header">#heading</span> - #blablabla</li>
+				<li><span class="tri-list-header">#heading</span> - #blablabla</li>
+				<li><span class="tri-list-header">#heading</span> - #blablabla</li>
+			</ul>
+			
+			<!-- quote -->
+			<div id="quote-container">
+				<h4 class="tri-text tri-quote">#quote</h4>
+				<p class="text-muted">#source</p>
+			</div>
+			
+			<!-- credits with link -->
+			<h3 class="tri-text">#credits more @<a href="#">#ref</a></h3>
+		</div>
+	</div>
+	
+	<hr class="tri-line-break" />
+	<!-- Credits section  -->
+	<p class="tri-text text-center">Coded by <a href="www.freecodecamp.com/romorin">romorin</a></p>
+</div>
