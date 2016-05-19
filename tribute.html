@@ -1,5 +1,6 @@
-<!-- 	freeCodeCamp tribute challenge 
-	uses bootstap -->
+<!-- 	freeCodeCamp tribute challenge, using bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 <!-- css-->
 <style>
@@ -9,28 +10,30 @@
 	.tri-subtitle {
 		font-style: italic;
 	}
-	.tri-quote {
-		font-weight: bold;
-	}
-	.tri-list-header {
+	.tri-quote, .tri-list-header {
 		font-weight: bold;
 	}
 	.tri-line-break {
-		color: #ECECEC;
+		border-color : lightgrey;
+	}
+	body {
+		background-color: #ECECEC;	
 	}
 	#base {
-		padding: 5% 10% 5% 10%;
+		padding: 1% 10% 5% 10%;
 	}
 	#contents {
-		background-color: #ECECEC;
+		background-color: white;
 		border-radius: 5px;
 		padding: 5%;
 	}
 	#details {
-		margin: 0px 20% 0px 20%;
+		margin: 0px 10px 0px 10px;
+		max-width: 600px;
+		margin: auto;
 	}
 	#picture-container {
-		background-color: white;
+		background-color: #ECECEC;
 		border-color: lightgrey;
 		border-width: 1px;
 		border-style: solid;
@@ -40,48 +43,68 @@
 	#quote-container {
 		margin: 0px 0px 0px 5%;
 	}
+	@media screen and (min-width: 720px) {
+	    #title  {
+		font-size: 48px;
+	    }
+	}
 </style>
 
-<!-- html -->
-<div id="base" class="container-fluid">
-	<!-- Contents section  -->
-	<div id="contents">
-		<!-- Title  -->
-		<h1 class="tri-text text-center">#Title</h1>
-		
-		<!-- Subtitle -->
-		<h3 class="tri-text text-center tri-subtitle">#Subtitle</h3>
-		
-		<!-- Picture section -->
-		<div id="picture-container">
-			<!-- picture -->
-			<!-- <img/> -->
-			<!-- context with credits -->
-			<p class="tri-text text-center">#context with credits</p>
-		</div>
-		
-		<!-- details -->
-		<div id="details">
-			<!-- timeline -->
-			<h3 class="tri-text">#List title</h3>
-			<ul class="tri-text">
-				<li><span class="tri-list-header">#heading</span> - #blablabla</li>
-				<li><span class="tri-list-header">#heading</span> - #blablabla</li>
-				<li><span class="tri-list-header">#heading</span> - #blablabla</li>
-			</ul>
-			
-			<!-- quote -->
-			<div id="quote-container">
-				<h4 class="tri-text tri-quote">#quote</h4>
-				<p class="text-muted">#source</p>
+<html>
+	<div id="base">
+		<!-- Contents section  -->
+		<div id="contents">
+			<!-- Title  -->
+			<h1 id="title" class="tri-text text-center">Jules Bianchi <br/>
+			<small class="tri-subtitle">Tous avec Jules #17</small></h1>
+	
+			<!-- Picture section -->
+			<div id="picture-container">
+				<!-- picture -->
+				<img class="img-responsive center-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Jules_Bianchi_2014_Singapore_FP1.jpg/800px-Jules_Bianchi_2014_Singapore_FP1.jpg" 
+					alt="Jules Bianchi 2014 Singapore FP1"/> 
+				<!-- context with credits -->
+				<p class="tri-text text-center">Jules Bianchi running at the 2014 Singapore FP1. Credits <a href="https://commons.wikimedia.org/wiki/File:Jules_Bianchi_2014_Singapore_FP1.jpg">Morio</a></p>
 			</div>
 			
-			<!-- credits with link -->
-			<h3 class="tri-text">#credits more @<a href="#">#ref</a></h3>
+			<!-- details -->
+			<div id="details" class="center-block">
+				<!-- timeline -->
+				<h3 class="tri-text">His early racing carrer : </h3>
+				<ul class="tri-text small">
+					<li><span class="tri-list-header">French Formula Renault 2.0</span> - Won 5 races and the championship in 2007.</li>
+					<li><span class="tri-list-header">Formula Renault Eurocup</span> - Raced 3 times in 2007, with one pole position and one fastest lap.</li>
+					<li><span class="tri-list-header">Formula 3 Euro Series</span> - Competed with the ART Grand Prix team. In 2008 finished third and in 2009 won the title with 9 wins.</li>
+					<li><span class="tri-list-header">Formula Renault 3.5 Series</span> - Participated at the Monaco race in 2009. Raced in 2012 with the Tech 1 Racing team, finishing second.</li>
+					<li><span class="tri-list-header">GP2 Asia Series</span> - Competed in three of the four rounds in the 2009-2010 season, and in the first two rounds in the 2010-2011 season.</li>
+					<li><span class="tri-list-header">GP2</span> - Drove for ART in 2010 and 2011. Finished third in both years.</li>
+				</ul>
+				
+				<h3 class="tri-text">In F1 : </h3>
+				<ul class="tri-text small">
+					<li><span class="tri-list-header">2009</span> - Participated at the young drivers test at the Jerez circuit with Ferrari.</li>
+					<li><span class="tri-list-header">2010</span> - Signed as the first recruit of the Ferrari Driver Academy. Participated at the young driver test in Abu Dhabi.</li>
+					<li><span class="tri-list-header">2011</span> - Tested for Ferrari at Fiorano, as part of the Ferrari Driver Academy.</li>
+					<li><span class="tri-list-header">2012</span> - Drove in nine friday free practise sessions with the Sahara Force India team, loaned from Ferrari.</li>
+					<li><span class="tri-list-header">2013</span> - Ran for the Marussia F1 team. Finished ahead of his teammate in all but two races where they both finished, 19 in overall standings.</li>
+					<li><span class="tri-list-header">2014</span> - Continued to run with the Marussia F1 team. Scored his first and only points at the Monaco grand prix, and the first points of his team, finishing ninth. Won the battle with his teammate in all but one of the races where none retired. Suffered an accident at the Japanese Grand Prix, which would eventually cost his life after nine months in coma.</li>
+				</ul>
+				
+				<p class="tri-text">He had a lasting impact in Formula 1. His achievements won the team the prize money which enabled them to stay in Formula 1 through the 2015 season and to this day. Since his crash, the FIA also improved the safety of the races, including with the usage of virtual safety car to reduce the speed of cars in case of problems.</p>
+				
+				<!-- quote  Change?-->
+				<div id="quote-container">
+					<h4 class="tri-text tri-quote">"Without him, without the two points he scored in Monaco last year, we would not be here."</h4>
+					<p class="text-muted"> -- Former Manor Marussia team principal John Booth, 2015 - <a href="http://www.gpupdate.net/en/f1-news/323373/booth-bianchi-made-manor-return-possible/">GpUpdate</a></p>
+				</div>
+				
+				<!-- credits with link -->
+				<h3 class="tri-text">Read more about him on <a href="https://en.wikipedia.org/wiki/Jules_Bianchi">wikipedia</a>.</h3>
+			</div>
 		</div>
+		
+		<hr class="tri-line-break" />
+		<!-- Credits section  -->
+		<p class="tri-text text-center">Coded by <a href="http://www.freecodecamp.com/romorin">romorin</a> - Using text from <a href="https://en.wikipedia.org/wiki/Jules_Bianchi">Wikipedia</a></p> 
 	</div>
-	
-	<hr class="tri-line-break" />
-	<!-- Credits section  -->
-	<p class="tri-text text-center">Coded by <a href="www.freecodecamp.com/romorin">romorin</a></p>
-</div>
+</html>
